@@ -2,14 +2,103 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+    }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    public static void task1() {
+        System.out.println("Задача 1");
+        int age = 16;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + " то он не достиг совершеннолетия, нужно немного подождать.");
         }
     }
+
+    public static void task2() {
+        System.out.println("Задача 2");
+        int temperature = 7;
+        if (temperature < 5) {
+            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
+        } else {
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
+        }
+
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int speed = 61;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то придется заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно.");
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        int year = 30;
+        if (year >= 2 && year <= 6) {
+            System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в детский сад.");
+        }
+        if (year >= 7 && year <= 17) {
+            System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в школу.");
+        }
+        if (year >= 18 && year <= 24) {
+            System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в университет.");
+        }
+        if (year > 24) {
+            System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить на работу.");
+        }
+
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        int year = 7;
+        if (year < 5) {
+            System.out.println("Если возраст ребенка равен " + year + ", то ему нельзя кататься на аттракционе.");
+        }
+        if (year > 5 && year <= 14) {
+            System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        }
+        if (year > 14) {
+            System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
+        }
+
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        int passеnger = 81;
+        if (passеnger < 60) {
+            System.out.println("В вагоне есть " + (60 - passеnger) + " сидячих мест и 42 стоячих мест. ");
+        } else if (passеnger >= 60 && passеnger < 102) {
+            System.out.println("В вагоне нет сидячих мест и осталось " + (102 - passеnger) + " стоячих мест");
+        } else {
+            System.out.println("В вагоне не осталось свободных мест");
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 15;
+        int two = 70;
+        int three = 9;
+        if (one > two && one > three) {
+            System.out.println("Число " + one + " большее");
+        } else if (two > one && two > three) {
+            System.out.println("Число " + two + " большее");
+        } else if (three > one && three > two) {
+            System.out.println("Число " + three + " большее");
+        }
+    }
+
 }
