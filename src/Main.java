@@ -48,13 +48,13 @@ public class Main {
         if (year >= 2 && year <= 6) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в детский сад.");
         }
-        if (year >= 7 && year <= 17) {
+        else if (year >= 7 && year <= 17) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в школу.");
         }
-        if (year >= 18 && year <= 24) {
+        else if (year >= 18 && year <= 24) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в университет.");
         }
-        if (year > 24) {
+        else if (year > 24) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить на работу.");
         }
 
@@ -66,10 +66,10 @@ public class Main {
         if (year < 5) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему нельзя кататься на аттракционе.");
         }
-        if (year > 5 && year <= 14) {
+        else if (year > 5 && year <= 14) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
         }
-        if (year > 14) {
+        else if (year > 14) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
 
