@@ -47,14 +47,11 @@ public class Main {
         int year = 30;
         if (year >= 2 && year <= 6) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в детский сад.");
-        }
-        else if (year >= 7 && year <= 17) {
+        } else if (year >= 7 && year <= 17) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в школу.");
-        }
-        else if (year >= 18 && year <= 24) {
+        } else if (year >= 18 && year <= 24) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить в университет.");
-        }
-        else if (year > 24) {
+        } else if (year > 24) {
             System.out.println("Если возраст человека равен " + year + ", то ему нужно ходить на работу.");
         }
 
@@ -62,14 +59,12 @@ public class Main {
 
     public static void task5() {
         System.out.println("Задача 5");
-        int year = 7;
-        if (year < 5) {
+        int year = 5;
+        if (year <= 5) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему нельзя кататься на аттракционе.");
-        }
-        else if (year > 5 && year <= 14) {
+        } else if (year > 5 && year <= 14) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
-        }
-        else if (year > 14) {
+        } else if (year > 14) {
             System.out.println("Если возраст ребенка равен " + year + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
 
@@ -77,11 +72,15 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
-        int passеnger = 81;
-        if (passеnger < 60) {
-            System.out.println("В вагоне есть " + (60 - passеnger) + " сидячих мест и 42 стоячих мест. ");
-        } else if (passеnger >= 60 && passеnger < 102) {
-            System.out.println("В вагоне нет сидячих мест и осталось " + (102 - passеnger) + " стоячих мест");
+        int passеnger = 42;
+        int maxPassenger = 102;
+        int sittingPassenger = 60;
+        int newSittingPassenger = sittingPassenger - passеnger;
+        int newMaxPassenger = maxPassenger - passеnger;
+        if (passеnger < sittingPassenger) {
+            System.out.println("В вагоне есть " + newSittingPassenger + " сидячих мест и 42 стоячих мест ");
+        } else if (passеnger >= sittingPassenger && passеnger < maxPassenger) {
+            System.out.println("В вагоне есть только " + newMaxPassenger + " стоячиx мест");
         } else {
             System.out.println("В вагоне не осталось свободных мест");
         }
